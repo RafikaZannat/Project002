@@ -1,0 +1,150 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'bookman','arial';
+  }
+  
+  .container {
+    width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  #converter, #series, #mazy {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+  
+  #converter h2, #series h2, #mazy h2 {
+    text-align: center;
+  }
+  
+  #converter form, #series form, #mazy form {
+    background-color: lightcoral;
+    width: 1000px;
+    margin: 1rem auto;
+    padding: 100px;
+    display: flex;
+    display: -moz-stack;
+    display: flex;
+    -webki: vertical;
+    -webkit-box-orient: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  #converter form div input[type=text], #converter form div input[type=submit], #converter form div select, #converter form div textarea, #series form div input[type=text], #series form div input[type=submit], #series form div select, #series form div textarea, #mazy form div input[type=text], #mazy form div input[type=submit], #mazy form div select, #mazy form div textarea {
+    padding: .70rem;
+    font-size: 1rem;
+    font-weight: 500;
+    margin: auto;
+    border-radius: 15px;
+  }
+  
+  #converter form div input[type=text], #series form div input[type=text], #mazy form div input[type=text] {
+    height: 1.7rem;
+  }
+  
+  #converter form div select, #converter form div input[type=submit], #converter form div input[type=button], #series form div select, #series form div input[type=submit], #series form div input[type=button], #mazy form div select, #mazy form div input[type=submit], #mazy form div input[type=button] {
+    height: 2.6rem;
+  }
+  
+  #converter form div input[type=submit], #converter form div input[type=button], #series form div input[type=submit], #series form div input[type=button], #mazy form div input[type=submit], #mazy form div input[type=button] {
+    -webkit-transition: .5s;
+    transition: .5s;
+    border: 1px solid aquamarine;
+    background-color: #fff;
+  }
+  
+  #converter form div input[type=submit]:hover, #converter form div input[type=button]:hover, #series form div input[type=submit]:hover, #series form div input[type=button]:hover, #mazy form div input[type=submit]:hover, #mazy form div input[type=button]:hover {
+    cursor: pointer;
+    background-color: aquamarine;
+    color: #fff;
+  }
+  
+  #converter form p, #series form p, #mazy form p {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  
+  #converter form input[type=text] {
+    width: 100px;
+  }
+  
+  #mazy input[type=button] {
+    padding: .35rem;
+    font-size: .9rem;
+    font-weight: 500;
+    margin: 5px 0;
+    border-radius: 5px;
+  }
+  
+  #unique .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  #unique .container .quote {
+    background-color: rgba(28, 37, 65, 0.829);
+    color: #fff;
+    border: 2px solid #5BC0BE;
+    padding: 1rem;
+    max-width: 500px;
+    text-align: center;
+    border-radius: 5px;
+  }
+  
+  #unique .container .color-select {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    margin-left: 10px;
+  }
+  
+  #unique .container .color-select .pink, #unique .container .color-select .aqua, #unique .container .color-select .orange, #unique .container .color-select .lime {
+    width: 20px;
+    height: 20px;
+    border: 3px solid #fff;
+    margin: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  #unique .container .color-select .pink {
+    background-color:pink;
+    -webkit-box-shadow: 2px 1px 24px 5px rgba(0, 128, 0, 0.438);
+            box-shadow: 2px 1px 24px 5px rgba(0, 128, 0, 0.438);
+  }
+  
+  #unique .container .color-select .aqua {
+    background-color:aqua;
+    -webkit-box-shadow: 2px 1px 24px 5px rgba(255, 239, 8, 0.842);
+            box-shadow: 2px 1px 24px 5px rgba(255, 239, 8, 0.842);
+   
+  }
+  
+  #unique .container .color-select .orange {
+    background-color:orange;
+    -webkit-box-shadow: 2px 1px 24px 5px rgba(0, 0, 255, 0.438);
+            box-shadow: 2px 1px 24px 5px rgba(0, 0, 255, 0.438);
+  }
+  
+  #unique .container .color-select .lime {
+    background-color: lime;
+    -webkit-box-shadow: 2px 1px 24px 5px rgba(255, 123, 0, 0.959);
+            box-shadow: 2px 1px 24px 5px rgba(255, 123, 0, 0.959);
+  }
